@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+
+body {
+    height: 250vh;
+    /* background-color: rgb(241, 241, 241); */
+    /* background-color: #e29c891f; */
+}
+
+:root {
+    --theme-color: #E29C89;
+    --heading-color: #FFCC73;
+    --desc-color: whitesmoke;
+}
+
+.viber-logo {
+    height: 45px;
+    width: auto;
+}
+
+.the-viber {
+    font-family: 'Acme', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--theme-color)!important;
+    font-size: 28px;
+
+}
+
+.navbar-font {
+    font-family: 'Basic', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-font a:hover {
+    border-bottom: 3px solid var(--theme-color)!important;
+}
+
+.f-28px {
+    font-size: 28px;
+}
+
+.btn-outline-success {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border: 2px solid  var(--theme-color) !important;
+    border-radius: 50px;
+}
+
+.btn-outline-success:hover {
+    color: #ffffff !important;
+    background-color:  var(--theme-color) !important;
+    border: 2px solid  var(--theme-color) !important;
+    /* border-radius: 50px; */
+}
+
+.rgba-black-light, .rgba-black-light:after {
+    background-color: rgb(0 0 0 / 10%)!important;
+}
+
+.heading-text {
+    font-family: 'Itim', cursive;
+    font-size: 42px;
+}
+
+.heading-color {
+    color: var(--theme-color);
+}
+
+.desc-text {
+    font-family: 'Mandali', sans-serif;
+    font-size: 18px;
+}
+
+.desc-color {
+    color: grey;
+}
+
+.caption-text {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 24px;
+    color: #6e6e6e;
+}
+
+.letter-spacing {
+    letter-spacing: 1.5px;
+}
+
+.carousel-icon {
+    color: var(--theme-color);
+    font-size: 40px;
+}
+
+
+/* Owl Carousel */
+
+.brands {
+    width: 100%;
+    /* padding-top: 90px; */
+    /* padding-bottom: 97px; */
+}
+
+.brands_slider_container {
+    height: 85px;
+    /* border: solid 1px #e8e8e8; */
+    /* box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); */
+    padding-left: 40px;
+    padding-right: 40px;
+    /* background: #fff */
+}
+
+.brands_slider {
+    height: 100%;
+    margin-top: 50px
+}
+
+.brands_item {
+    height: 100%
+}
+
+.brands_item img {
+    max-width: 100%
+}
+
+.brands_nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 5px;
+    cursor: pointer
+}
+
+.brands_nav i {
+    color: #e5e5e5;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+.brands_nav:hover i {
+    color: #676767
+}
+
+.brands_prev {
+    left: 40px
+}
+
+.brands_next {
+    right: 40px
+}
+
+
+/* Media Queries */
+
+@media (max-width: 430px) {
+    .carousel-img-h {
+        height: 250px;
+    }
+}
+@media (min-width: 760px) {
+    .carousel-img-h {
+        height: 630px;
+    }
+}
