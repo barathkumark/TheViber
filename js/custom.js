@@ -22,9 +22,9 @@ $(document).ready(function () {
           autoplayTimeout: 10000,
           nav: true,
           dots: false,
-          autoWidth: true,
+          autoWidth: false,
           items: 6,
-          margin: 70
+        //   margin: 60
         });
   
       if ($('.brands_prev').length) {
@@ -43,4 +43,12 @@ $(document).ready(function () {
     }
   
   
+  });
+
+
+// display ad preview
+
+$('.zoomBtn').on('click', function () {
+    $('.enlargeImageModalSource').attr('src', $(this).attr('data-img'));
+    $('#enlargeImageModal').modal('show');
   });
