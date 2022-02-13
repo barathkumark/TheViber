@@ -11,11 +11,13 @@ body {
     height: 250vh;
     /* background-color: rgb(241, 241, 241); */
     /* background-color: #e29c891f; */
+    background-color: var(--body-color);
 }
 
 :root {
     /* --theme-color: #E29C89; */
     --theme-color: #c1a92a;
+    --body-color: #f5f0eb;
     --heading-color: #FFCC73;
     --desc-color: whitesmoke;
 }
@@ -45,7 +47,7 @@ body {
 }
 
 .f-28px {
-    font-size: 28px;
+    font-size: 28px!important;
 }
 
 .f-24px {
@@ -95,14 +97,19 @@ body {
     color: grey;
 }
 
+.body-color {
+    color: var(--body-color)!important;
+}
+
 .white-smoke-text {
     color: whitesmoke!important;
 }
 
 .caption-text {
     font-family: 'Baloo Bhaijaan 2', cursive;
-    font-size: 24px;
+    font-size: 22px;
     color: #6e6e6e;
+    letter-spacing: 2px;
 }
 
 .letter-spacing {
@@ -126,11 +133,11 @@ body {
 .brands_slider_container {
     height: 85px;
     /* border: solid 1px #e8e8e8; */
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     padding-left: 40px;
     padding-right: 40px;
     /* background: #fff */
-    background: #c1a92a;
+    background: #f5f0eb;
     border-radius: 5px;
 }
 
@@ -183,7 +190,7 @@ body {
 .project {
     /* background: var(--heading-color);  */
         background-color: rgba(0, 0, 0, 0.55);
-    height: 80px;
+    height: 40px;
     border-radius: 0px 0px 8px 8px ;
 }
 
@@ -192,6 +199,31 @@ body {
     background-color: rgba(0, 0, 0, 0.55);
     height: 170px;
     transition: 1s;
+}
+
+.play-btn {
+    border-radius: 50%!important;
+    color: #fff;
+    background-color: var(--theme-color)!important;
+}
+
+/* Android Button */
+
+.android-button img:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1)!important;
+}
+
+
+.zoom {
+    transition: transform .5s;
+}
+
+.zoom.active {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 
