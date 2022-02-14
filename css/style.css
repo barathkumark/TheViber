@@ -131,13 +131,13 @@ body {
 }
 
 .brands_slider_container {
-    height: 85px;
+    height: 80px;
     /* border: solid 1px #e8e8e8; */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); */
     padding-left: 40px;
-    padding-right: 40px;
+    /* padding-right: 40px; */
     /* background: #fff */
-    background: #f5f0eb;
+    /* background: #f5f0eb; */
     border-radius: 5px;
 }
 
@@ -218,14 +218,42 @@ body {
     transition: transform .5s;
 }
 
-.zoom.active {
+.zoom.hover {
     -ms-transform: scale(1.1);
     /* IE 9 */
     -webkit-transform: scale(1.1);
     /* Safari 3-8 */
-    transform: scale(1.1);
+    transform: scale(0.5);
 }
 
+.faq-thumb {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #33406a;
+    border: 1px solid rgba(83, 92, 152, .2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 /* Media Queries */
 
@@ -233,9 +261,22 @@ body {
     .carousel-img-h {
         height: 250px;
     }
+    .video-tour-bg {
+        height: 250px!important;
+    }
 }
+
 @media (min-width: 760px) {
     .carousel-img-h {
         height: 630px;
+    }
+    .video-tour-bg {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .video-tour-bg {
+        height: 500px;
     }
 }
